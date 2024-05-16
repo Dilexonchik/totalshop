@@ -1,0 +1,409 @@
+body{
+	background: #e0e3e5;
+	font-family: "Intro", sans-serif, Helvetica, Arial;
+	margin: 0;
+}
+
+.head{
+    position: absolute;
+	background-color: rgb(255, 99, 71);
+	min-height: 80px;
+	width: 100%;
+	position: fixed;
+	display: flex;
+    float: left; /* для выравнивания по правому краю - right */
+    padding: 0 10px;
+}
+.cart {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #FF6347;
+  transition: 0.1s;
+  cursor: pointer;
+  position: fixed; /* Фиксированное расположение */
+  top: 2px; /* в правом верхнем углу */
+  margin-left: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  padding: 15px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart:hover {
+  transform: scale(0.9);
+}
+.cart__num {
+  position: absolute;
+  background-color: #F4A460;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  top: -5px;
+  right: -5px;
+}
+
+
+.info{
+    list-style: none;
+	position: absolute;
+	top: 30px;
+	right: 70px;
+    color: #000000;
+}
+.info li{
+    float: left; /* для выравнивания по правому краю - right */
+    padding: 0 10px;
+}
+.name{
+    list-style: none;
+	position: absolute;
+	top: 10px;
+	right: 850px;
+    color: #ccc;
+    font-size: 50px
+    
+}
+
+.ico img{
+	height: 66px;
+	margin-top: 10px;
+	padding: 0 0 3 16px;
+}
+#menuVertical{
+	width: 71px;
+	height: auto;
+	position: fixed;
+	z-index: 7;
+	top: 79px;
+}
+
+#menuVertical ul{
+	display: block;
+	width: 54px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+#menuVertical ul li{
+	display: block;
+	width: 175px;
+	position: relative;
+}
+
+#menuVertical ul li a{
+	position: relative;
+	display: block;
+	width: 198px;
+	height: auto;
+	box-sizing: border-box;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ccc;
+	line-height: 2em;
+	padding: 10px 15px;
+	background: rgb(255, 127, 80);
+	text-decoration: none;
+	text-shadow: 2px 2px 3px #222;
+}
+
+
+
+#menuVertical ul li a:hover,
+#menuVertical ul li:hover a{
+	background: rgb(255, 160, 122);
+	color: #fff;
+}
+
+#menuVertical ul li ul{
+	position: absolute;
+	top: 0px;
+	left: 198px;
+	display: none;
+	width: auto;
+}
+
+#menuVertical ul li:hover ul{
+	display: block;
+}
+
+#menuVertical ul li ul li a{
+	white-space: nowrap;
+	text-transform: none;
+	padding: 10px 20px;
+	width: 153px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menuVertical ul li ul li a:hover{
+	background: rgb(255, 127, 80);
+	color: #fff;
+}
+
+
+.menu{
+	position: absolute;
+	width: 198px;
+	height: 100%;
+	background: rgb(255, 127, 80);
+	box-shadow: 1px 2px 3px #888;
+	position: fixed;
+	top: 79px;
+	z-index: 3;
+}
+.container{
+    display: flex;
+    width: 1002px;
+    height: auto;
+    position: fixed;
+    z-index: 6;
+    top: 125px;
+    left: 250px;
+    float: left;
+
+}
+.product{
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+.image{
+    margin-bottom: 7px;
+}
+.image img{
+    height: 340px;
+    width: 420px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.inf h3{
+    font-size: 21px;
+    margin-bottom: 0;
+
+}
+.info-price{
+    display: flex;
+    flex-flow: row nowrap; 
+    justify-content: space-between;
+    align-items: center;
+     
+}
+.add{
+    border: none;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6347;
+    color: #fff;
+    border-radius: 10px;
+}
+.add a{
+    text-decoration: none;
+    color: #fff;
+}
+.price{
+    font-weight: 700;
+     font-size: 18px;
+}
+.content{
+    display: flex;
+    width: 1002px;
+    height: auto;
+    position: fixed;
+    z-index: 6;
+    top: 550px;
+    left: 350px;
+}
+.images{
+    margin-bottom: 10px;
+}
+.images img{
+    height: 300px;
+    width: 1500px;
+    object-fit: fill;
+    border-radius: 7px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.infor{
+    
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.info-prices{
+    display: flex;
+    flex-flow: row nowrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    width: 1002px;
+    height: auto;
+    position: fixed;
+    z-index: 6;
+    top: 550px;
+    left: 950px;
+}
+.container-dop{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1750px;
+    height: 900px;
+    position: fixed;
+    z-index: 6;
+    top: 79px;
+    left: 198px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+
+}
+.product-dop{
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.image{
+    margin-bottom: 0px;
+}
+.image-dop img{
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+.inf-dop h3{
+    font-size: 21px;
+    margin-bottom: 4px;
+}
+.inf-dop h5{
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.content-firma{
+    display: flex;
+    width: 850px;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    top: 120px;
+    left: 250px;
+}
+.text-firma{
+    display: flex;
+    width: 550px;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    top: 180px;
+    left: 900px;
+}
+.content-avtor{
+    display: flex;
+    width: 700px;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    top: 200px;
+    left: 350px;
+}
+.text-avtor{
+    display: flex;
+    width: 550px;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    top: 230px;
+    left: 1000px;
+}
+.friends{
+    display: flex;
+    width: 550px;
+    height: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 600px;
+    left: 220px;
+}
+.tabl{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.images_ img{
+    height: 150px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.images_a img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.stat{
+    display: flex;
+    width: 350px;
+    height: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 1600px;
+}
+.number{
+    margin-left: auto;
+    margin-right: 20px;
+    
+}
+.number h3{
+    width: 250px;
+    text-align: right;
+}
+.contact{
+    display: flex;
+    width: 350px;
+    height: 800px;
+    position: fixed;
+    z-index: 1;
+    top: 750px;
+    left: 1550px;
+}
+.uwu{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.footer{
+	position: absolute;
+	width: 198px;
+	height: 88px;
+	bottom: -29px;
+	background: rgb(255, 127, 80);
+	margin-bottom: 78px;
+	z-index: 13;
+	border-top: 1px solid rgb(255, 127, 80);
+	color: rgb(11, 38, 46);
+	text-align: center;
+	padding-top: 22px;
+}
+.footer a{
+    text-decoration: none;
+}
+
